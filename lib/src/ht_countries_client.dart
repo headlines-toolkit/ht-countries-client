@@ -1,3 +1,5 @@
+// ignore_for_file: lines_longer_than_80_chars
+
 import 'package:ht_countries_client/src/exceptions.dart';
 import 'package:ht_countries_client/src/models/models.dart';
 
@@ -9,13 +11,20 @@ import 'package:ht_countries_client/src/models/models.dart';
 /// data fetching and manipulation from a specific source (e.g., API, database).
 /// {@endtemplate}
 abstract class HtCountriesClient {
-  /// Fetches a list of all available countries.
+  /// Fetches a paginated list of available countries using cursor-based pagination.
   ///
-  /// Returns a list of [Country] objects.
+  /// [limit]: The maximum number of countries to return in this page.
+  /// [startAfterId]: The unique ID (UUID) of the last country fetched in the
+  ///   previous page. If null or omitted, fetches the first page.
+  ///
+  /// Returns a list of [Country] objects starting after the country with
+  /// [startAfterId], up to the specified [limit]. The list might be empty if
+  /// no more countries are available after the specified ID.
   ///
   /// {@macro country_fetch_failure}
   /// @throws [CountryFetchFailure] if an error occurs during the fetch operation.
-  Future<List<Country>> fetchCountries();
+  Future<List<Country>> fetchCountries(
+      {required int limit, String? startAfterId,});
 
   /// Fetches a single country by its unique ISO 3166-1 alpha-2 code.
   ///
