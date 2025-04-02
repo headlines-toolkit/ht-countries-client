@@ -37,7 +37,7 @@ class CountryNotFound extends CountryException {
   /// {@macro country_not_found}
   const CountryNotFound(super.error, [super.stackTrace]);
 
-   @override
+  @override
   String toString() {
     return 'CountryNotFound: $error';
   }
@@ -50,7 +50,7 @@ class CountryCreateFailure extends CountryException {
   /// {@macro country_create_failure}
   const CountryCreateFailure(super.error, [super.stackTrace]);
 
-   @override
+  @override
   String toString() {
     return 'CountryCreateFailure: $error';
   }
@@ -63,7 +63,7 @@ class CountryUpdateFailure extends CountryException {
   /// {@macro country_update_failure}
   const CountryUpdateFailure(super.error, [super.stackTrace]);
 
-   @override
+  @override
   String toString() {
     return 'CountryUpdateFailure: $error';
   }
@@ -76,7 +76,7 @@ class CountryDeleteFailure extends CountryException {
   /// {@macro country_delete_failure}
   const CountryDeleteFailure(super.error, [super.stackTrace]);
 
-   @override
+  @override
   String toString() {
     return 'CountryDeleteFailure: $error';
   }

@@ -48,7 +48,7 @@ void main() {
       expect(exception.toString(), contains('CountryDeleteFailure: $error'));
     });
 
-     test('Exceptions without stackTrace work', () {
+    test('Exceptions without stackTrace work', () {
       final exception = CountryException(error);
       expect(exception.error, equals(error));
       expect(exception.stackTrace, isNull);
