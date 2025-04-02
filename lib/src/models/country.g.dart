@@ -14,6 +14,7 @@ Country _$CountryFromJson(Map<String, dynamic> json) => $checkedCreate(
           isoCode: $checkedConvert('iso_code', (v) => v as String),
           name: $checkedConvert('name', (v) => v as String),
           flagUrl: $checkedConvert('flag_url', (v) => v as String),
+          id: $checkedConvert('id', (v) => v as String?),
         );
         return val;
       },
@@ -21,6 +22,7 @@ Country _$CountryFromJson(Map<String, dynamic> json) => $checkedCreate(
     );
 
 Map<String, dynamic> _$CountryToJson(Country instance) => <String, dynamic>{
+      'id': instance.id,
       'iso_code': instance.isoCode,
       'name': instance.name,
       'flag_url': instance.flagUrl,
