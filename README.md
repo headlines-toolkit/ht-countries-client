@@ -113,13 +113,9 @@ The client defines specific exceptions for different error scenarios (e.g., `Cou
 This package includes unit tests. Run them using:
 
 ```bash
-flutter test
+dart test
 ```
 
 ## License
 
-This project is licensed under the **PolyForm Free Trial License 1.0.0**. See the [LICENSE](LICENSE) file for details. This license allows free use for evaluation purposes for less than 32 consecutive days.
-
-## Repository
-
-[https://github.com/headlines-toolkit/ht-countries-client](https://github.com/headlines-toolkit/ht-countries-client)
+This project is licensed under the **PolyForm Free Trial License 1.0.0**. See the [LICENSE](LICENSE) file for details.
