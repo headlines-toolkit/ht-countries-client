@@ -23,8 +23,10 @@ abstract class HtCountriesClient {
   ///
   /// {@macro country_fetch_failure}
   /// @throws [CountryFetchFailure] if an error occurs during the fetch operation.
-  Future<List<Country>> fetchCountries(
-      {required int limit, String? startAfterId,});
+  Future<List<Country>> fetchCountries({
+    required int limit,
+    String? startAfterId,
+  });
 
   /// Fetches a single country by its unique ISO 3166-1 alpha-2 code.
   ///
