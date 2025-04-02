@@ -2,7 +2,7 @@
 
 [![coverage badge](coverage_badge.svg)](https://github.com/VeryGoodOpenSource/very_good_coverage) [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis) [![License: PolyForm Free Trial 1.0.0](https://img.shields.io/badge/License-PolyForm%20Free%20Trial%201.0.0-blue)](https://polyformproject.org/licenses/free-trial/1.0.0)
 
-A Dart client library for interacting with country data.
+A Dart client interface package for managing news countries.
 
 ## Description
 

@@ -1,5 +1,5 @@
 name: ht_countries_client
-description: A Very Good Project created by Very Good CLI.
+description: A Dart client interface package for managing news countries.
 repository: https://github.com/headlines-toolkit/ht-countries-client
 publish_to: none
 
