@@ -2,6 +2,5 @@
 /// models, and exceptions.
 library ht_countries_client;
 
-export 'src/exceptions.dart';
 export 'src/ht_countries_client.dart';
 export 'src/models/models.dart';

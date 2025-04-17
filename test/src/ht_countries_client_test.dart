@@ -1,4 +1,4 @@
-import 'package:ht_countries_client/src/exceptions.dart';
+import 'package:ht_countries_client/src/ht_countries_client.dart';
 import 'package:test/test.dart';
 
 void main() {
